@@ -1,0 +1,109 @@
+teste{
+    
+    h1{ color: #bb0000; }
+    p{ color: #666; }
+    
+    label, input{
+        display: inline-block;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    
+    label{
+        width: calc(30%);
+        font-weight: bold;
+    }
+    
+    input{
+        width: calc(70% - 30px);
+        padding: 10px;
+        border: 1px solid #640101;
+        border-radius: 10px;
+    }
+    
+    .botoes{
+        text-align: right;
+        margin-top: 20px;
+    }
+    
+    
+    button:hover{
+        background-color: #103b85;
+    }
+    
+    button[type="reset"]{
+        background-color: #06690d;
+    }
+    button[type="reset"]:hover{
+        background-color: #032905;
+    }
+    
+}
+
+
+    body{
+    font-family: Arial, sans-serif;
+    }
+
+modal{
+    width: 50%;
+    margin: 50%;
+    background-color: goldenrod;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+main{
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    /* 1º Valor (-)Esquerda e (+)Direita
+    2º valor (-)Cima e (+)Baixo
+    3º valor Suavidade */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+
+label, input{
+    display: inline-block;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+label{
+    width: calc(30%);
+    font-weight: bold;
+}
+
+input{
+    width: calc(70% - 30px);
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.botoes{
+    text-align: left;
+    margin-top: 20px;
+}
+
+button{
+    background-color: #8f0000;
+    color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #103b85;
+}
+
+button[type="reset"]{
+    background-color: green;
+}
+button[type="reset"]:hover{
+    background-color: #000000;
+}

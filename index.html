@@ -1,0 +1,93 @@
+<!--Professor estou com muita dificuldade nesse conteudo novo de javascrip, sei que nao ficou nada bonita a tela mas foi oq eu consegui =(
+a tela foi editada com java para mudar as cores das letras da função Label, e abri um modal para informações do sortei, usei as conts para "puxar" as informaçoes dela para poder colocar cor usando ForEach, o if que foi utilizado é para quando o usuario clicar fora da tela e o modal se fechar. --> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <section>
+        <h1>Cadastro de Natal</h1>
+
+
+        <small><p>Preencha o formulário para concorrer a um Premio!!</p></small>
+        <form>
+            <label for="cep">Nome:</label>
+            <input type="text" name="nome" id="nome"><br>
+            <label for="tel">Telefone:</label>
+            <input type="text" name="cidade" id="cidade"><br>
+            <label for="cep">CEP: </label>
+            <input type="text" name="tel" id="tel">
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cep" id="cep"><br>
+            <label for="bairro">Bairro: </label>
+            <input type="text" name="bairro" id="bairro"><br>
+            <label for="rua">Rua: </label>
+            <input type="text" name="rua" id="rua"><br>
+            
+          
+            <div class="botoes">
+            <button type="reset" class="verde">Limpar</button>
+            <button type="submit" class="vermelho">Cadastrar</button>
+            </div>
+        </form>
+    </section>
+    <a href="#">Dados do Sorteio!!</a>
+        <dialog>
+            <h2>Título Modal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda aut fugiat dolor hic sunt ut quasi esse repudiandae. Vel temporibus aliquid obcaecati, ipsa commodi consequatur dolore dolor provident inventore.</p>
+            <a href="#">Fechar Modal</a>
+</main>
+<script>
+    const label = document.querySelector("label");
+    const corzinha = document.querySelectorAll("label");
+    const paragrafos = document.querySelectorAll("p");
+    const h1 = document.querySelectorAll("h1");
+    const body = document.querySelectorAll("body");
+    const a = document.querySelectorAll("a");
+    
+    a.forEach(par =>{
+            par.style.background.color = "gold";
+        });
+    
+    body.forEach(par =>{
+            par.style.background.color = "blue";
+        });
+
+    corzinha.forEach(par =>{
+            par.style.color = "green";
+        });
+
+    paragrafos.forEach(par =>{
+            par.style.color = "red";
+        });
+    h1.forEach(par =>{
+            par.style.color = "yellow";
+        })
+        const modal = document.querySelector("dialog");
+        const btnModal = document.querySelectorAll("a");
+
+        btnModal[0].onclick = function(){
+            modal.showModal();
+        }
+
+        btnModal[1].onclick = function(){
+            modal.close();
+        }
+
+        modal.addEventListener("click", evento =>{
+            if(evento.target === modal){
+                modal.close();
+            }
+        });
+
+
+
+</script>
+</body>
+</html>
